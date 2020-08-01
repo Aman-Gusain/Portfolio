@@ -1032,6 +1032,7 @@ iframe{
       position: absolute;
       right: 0;
       width: auto;
+      margin-right: 8px;
       height: 100%;
       margin: 0;
    }
@@ -1128,8 +1129,8 @@ iframe{
       display: none;
    }
    .circle{
-      width:100px;
-      height: 1.5px;
+      width:10px;
+      height: .5px;
       position: absolute;
       margin: auto;
       top:0;
@@ -1141,8 +1142,8 @@ iframe{
     }
     .circle:before{
       content:" ";
-      width: 10px;
-      height:10px;
+      width: 1px;
+      height:1px;
       border-radius: 50%;
       background: #FFF;
       display:inline-block;
