@@ -1,4 +1,9 @@
 //jshint esversion:6
+$("#contactBtn").click(function (e) {
+   activeLink(".contact");
+   loadPage("#contactPage");
+});
+
 $(".home").click(function (e) {
    activeLink(".home");
    loadPage("#homePage");
@@ -30,7 +35,7 @@ activeLink = (page) => {
 };
 
 deactivateLink = () => {
-   $("i").css("color", "#909096");
+   $(".links i").css("color", "#909096");
 };
 
 loadPage = (page) => {
