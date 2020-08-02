@@ -28,6 +28,17 @@ $(".contact").click(function (e) {
    activeLink(".contact");
    loadPage("#contactPage");
 });
+$(".ContactLink").click(function (e) {
+   activeLink(".contact");
+   loadPage("#contactPage");
+});
+$("#sendMail").click(function (e) {
+   clearInput();
+   $(".alert").css("display", "block");
+   setTimeout(function () {
+      $(".alert").css("display", "none");
+   }, 3000);
+});
 
 activeLink = (page) => {
    deactivateLink();
@@ -50,18 +61,9 @@ loadPage = (page) => {
       $(`${page}`).addClass("slide-in-bck-center");
    }, 2000);
 };
-$(function () {
-   var btn = $(".btn");
-   btn.on("click", function () {
-      $(this).addClass("btn__progress");
-      setTimeout(function () {
-         btn.addClass("btn__progress--fill");
-      }, 500);
-      setTimeout(function () {
-         btn.removeClass("btn__progress--fill");
-      }, 4100);
-      setTimeout(function () {
-         btn.addClass("btn__complete");
-      }, 4400);
-   });
-});
+clearInput = () => {
+   $("#name").val(" ");
+   $("#email").val(" ");
+   $("#subject").val(" ");
+   $("#message").val(" ");
+};
