@@ -898,16 +898,19 @@ iframe{
    max-width: 68%;
  }
  .bar14::after{
-   max-width: 30%;
+   max-width: 55%;
  }
  .bar15::after{
-   max-width: 80%;
+   max-width: 40%;
  }
  .bar16::after{
-   max-width: 60%;
+   max-width: 80%;
  }
  .bar17::after{
-   max-width: 75%;
+   max-width: 60%;
+ }
+ .bar18::after{
+   max-width: 70%;
  }
  .bar11::after{
    max-width: 70%;
