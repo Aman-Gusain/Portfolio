@@ -815,6 +815,7 @@ iframe{
     display: none;
  }
  .graph-cont{
+   padding-top: 70px;
    width: calc(100% - 40px);
    width: 100%;
    max-width: 800px;
